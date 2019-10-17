@@ -25,6 +25,23 @@ public class LearnArrayOperation : MonoBehaviour
         Debug.Log(10 <= 3);
         Debug.Log(10 == 3);
         Debug.Log(10 != 3);
-    }
 
+        if (students[0]>=60)
+        {
+            Debug.Log("你及格了");
+        }
+        else if (students[0] >= 50)
+        {
+            Debug.Log("你下次再來");
+        }
+        else
+        {
+            Debug.Log("你不及格");
+        }
+        
+    }
+    private void Update()
+    {
+        Debug.Log(Input.GetKeyDown(KeyCode.Space));
+    }
 }

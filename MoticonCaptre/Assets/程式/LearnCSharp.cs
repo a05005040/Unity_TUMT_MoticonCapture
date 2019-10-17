@@ -32,7 +32,7 @@ public class LearnCSharp : MonoBehaviour
     {
         //非靜態類別
         //Camera.depth = 10.5f;//
-        cam.depth = 10.5f;
+       // cam.depth = 10.5f;
 
         //靜態類別
         Debug.Log("123");

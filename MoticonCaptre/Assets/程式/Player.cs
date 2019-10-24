@@ -2,15 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+public class Player : MonoBehaviour
+{
+    Animator Robot;
+    bool M_dance = false;            //跳舞
+    private void Start()
+    {
+        Robot = GetComponent<Animator>();
+    }
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Robot.SetTrigger("跳舞觸發器");
+        }
+        Robot.SetBool("跑步開關", Input.GetKey(KeyCode.R));
+    }
 }

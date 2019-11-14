@@ -192,7 +192,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 58ddbe1b1ebb6814695bb11b99b4de4d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.5039105e-17
+      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 58ddbe1b1ebb6814695bb11b99b4de4d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -393,3 +393,53 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1449040234 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100006, guid: 58ddbe1b1ebb6814695bb11b99b4de4d,
+    type: 3}
+  m_PrefabInternal: {fileID: 1088222768}
+--- !u!114 &1449040235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1449040234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b1522c15ed1d7d428263f6b47e5eaf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parRun: "\u8DD1\u6B65\u958B\u95DC"
+  parAtk: "\u653B\u64CA\u89F8\u767C"
+  parDam: "\u53D7\u50B7\u89F8\u767C"
+  parJump: "\u8DF3\u8E8D\u89F8\u767C"
+  parDead: "\u6B7B\u4EA1\u958B\u95DC"
+  speed: 12.9
+--- !u!136 &1449040238
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1449040234}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.2
+  m_Height: 1.4064355
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.64919484, z: 0}
+--- !u!54 &1449040239
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1449040234}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 80
+  m_CollisionDetection: 0
